@@ -1,0 +1,86 @@
+
+
+.row {
+    padding:20px; 
+    background-color:#001219;
+text-align:center;
+}
+
+
+ @media (min-width:576px){ 
+  #foto-perfil{
+      position:absolute;
+      width: 15%;
+      border-radius: 100%;    
+      left: 3%;
+      top: 600px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+     
+}   
+}
+
+  
+  @media (max-width:575px){ 
+    #foto-perfil{
+        position:absolute;
+        width: 32%;
+        border-radius: 100%;  
+        left: 33%;
+        top: 910px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+  }   
+  }
+
+  @media (min-width:1600px){ 
+    #foto-perfil{
+        position:absolute;
+        width: 11%;
+        border-radius: 100%;
+        left: 10%;
+        top: 590px;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+  }   
+  }
+#nombres{
+    font-weight: bold;
+    margin-top:30%;
+   color: #EE9B00;
+}
+h1{
+    color:#EE9B00;
+}
+
+.modal {
+    color:#001219;
+}
+
+.fade {
+    color:#001219;
+}
+.edicion{
+    
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+
+.tarjetas{
+    margin:60px;
+}
+
+.card{
+    margin-top: 30px;
+}
+
+.titulo{
+   margin-top: 50px;
+}

@@ -1,0 +1,153 @@
+<div class="row " *ngIf="usuario">
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+
+    <img id="foto-perfil" src="{{usuario.img}}" alt="" class="img-fluid">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+    <p id="nombres">{{usuario.nombre}} {{usuario.apellido}}<a 
+        data-bs-toggle="modal" data-bs-target="#editUsuarioModal" 
+        (click)="onOpenModal('edit', usuario)"
+        class="btn btn-warning tooltips edicion"
+        data-toggle="tooltip"
+        data-placement="top"
+        data-original-title="Editar">
+        <i class="fa fa-pencil"></i>
+        </a> </p>  
+    
+    
+    
+    <p style="color:#fff">{{usuario.titulo}}</p>
+</div>
+<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <span><h1 style="color:#EE9B00;">Acerca de mí</h1>
+    <p style="color:#fff">{{usuario.descripcion}} 
+    </p></span>
+</div>
+
+
+
+</div>
+
+
+
+
+<!---------------MODAL EDIT-->
+  
+<div class="modal fade" 
+id="editUsuarioModal" 
+tabindex="-1" role="dialog" 
+aria-labelledby="editUsuarioModalLabel" 
+aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editUsuarioModalLabel">Editar Usuario {{editUsuario?.nombre}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form #editForm="ngForm">
+          <div class="form-group">
+              <label for="nombre">Nombre</label>
+          <input type="text"
+          ngModel="{{editUsuario?.nombre}}"
+          name="nombre"
+          class="form-control"
+          id="nombre"
+          aria-describedby="emailHelp"
+          placeholder="Nombre"
+          required>
+          </div>
+          <input type="hidden"
+          ngModel="{{editUsuario?.id}}"
+          name="id"
+          class="form-control"
+          id="id"
+          placeholder="">
+          <div class="form-group">
+             <label for="phone">Apellido</label>
+         <input type="text"
+         ngModel="{{editUsuario?.apellido}}"
+         name="apellido"
+         class="form-control"
+         id="apellido"
+         placeholder="Apellido"
+         required>
+         </div>
+          <div class="form-group">
+              <label for="titulo">Título</label>
+          <input type="text"
+          ngModel="{{editUsuario?.titulo}}"
+          name="titulo"
+          class="form-control"
+          id="titulo"
+          placeholder="Titulo"
+          required>
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+        <input type="text"
+        ngModel="{{editUsuario?.descripcion}}"
+        name="descripcion"
+        class="form-control"
+        id="descripcion"
+        placeholder="Descripcion"
+        required>
+        </div>
+        <div class="form-group">
+          <label for="img">Foto de Perfil</label>
+      <input type="text"
+      ngModel="{{editUsuario?.img}}"
+      name="img"
+      class="form-control"
+      id="img"
+      placeholder="Foto de Perfil"
+     > </div>
+     <div class="form-group">
+      <label for="banner">Banner</label>
+  <input type="text"
+  ngModel="{{editUsuario?.banner}}"
+  name="banner"
+  class="form-control"
+  id="banner"
+  placeholder="Foto de Portada"
+ ></div>
+     
+       <div class="modal-footer">
+        <button type="button" id="" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button (click)="onUpdateUsuario(editForm.value)"
+        data-bs-dismiss="modal"
+      class="btn btn-primary">Guardar Cambios</button>
+      </div>
+      
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

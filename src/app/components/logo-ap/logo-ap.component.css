@@ -1,0 +1,94 @@
+ #logo {
+    width:150px;
+    margin: 0 1em;
+    cursor:pointer;
+}
+img{
+    
+    cursor: pointer;
+    position: relative;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+img:hover{
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+.redes{
+    font-size:30px;
+    color: white;
+margin-right: 1em;
+}
+i{
+    margin: 0 .6em;
+    cursor: pointer;
+    position: relative;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+i:hover{
+    transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
+   color: #EE9B00;
+}
+a{
+text-decoration: none;
+color: white;
+}
+.container-fluid {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.btn{
+    margin-top: -10px;
+    margin-left: 1em;
+    cursor: pointer;
+    position: relative;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    background-color: #001219;
+    color: #fff;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+
+}
+
+
+@media(max-width:575px){
+.container-fluid{
+    flex-direction: column;
+
+}
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.redes i, .redes button {
+    margin: 0.5em;
+}
+}
+ 

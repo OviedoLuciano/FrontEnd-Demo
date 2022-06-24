@@ -1,0 +1,97 @@
+<style>
+
+  
+    .bg{
+      background-image: url(https://www.yehuinturismo.com/media/publisher//1140x565/zc/resize-up/Yehuin%20-%20Turismo%20-%20City%20Tour%20-%20Sobrevuelo%20Noche.jpg);
+      background-position: center center;
+      background-size:cover;
+    }
+  </style>
+  
+  
+  
+  <div class="container w-75  mt-5 rounded shadow">
+    <div class="row align-items-stretch">
+     
+    
+    
+      <div class="col bg-white p-5">
+  <div class="text-end">
+    <img src="https://cdn-sp.radionacional.com.ar/wp-content/uploads/2021/12/Diseno-sin-titulo-1-1.png" width="100" alt="">
+  </div>
+  <h2 class="fw-bold text-center py-5">Registro</h2>
+  
+  <!---Login-->
+  
+  <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+  <div class="mb-4">
+    <label for="email" class="form-label">Correo Electronico</label>
+    <input type="email" class="form-control" name="email" formControlName="email">
+  </div>
+  <div class="mb-4">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" name="password" formControlName="password">
+  </div>
+  
+  <div class="d-grid">
+    <button type="submit" class="btn btn-primary" value="Enviar">Registrarse</button>
+  </div>
+  <div class="my-3">
+    <span>¿Ya tienes cuenta? <a href="/login">Iniciar Sesión</a></span>
+  </div>
+  
+  </form>
+  
+  
+    </div>
+     <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+  
+      </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<h2>Registro de usuario</h2>
+<form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="text" class="form-control" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <input type="submit" value="Enviar">
+</form>--->

@@ -1,0 +1,32 @@
+.row {
+    padding: 20px;
+    background-color: #001219;
+    color: #fff;
+}
+
+h1, h3{
+    display: inline;
+}
+
+.modal {
+    color:#001219;
+}
+
+.fade {
+    color:#001219;
+}
+.edicion{
+    
+    margin-right: 10px;
+}
+
+
+
+
+.card{
+    margin-top: 30px;
+}
+
+.titulo{
+   margin-top: 50px;
+}
