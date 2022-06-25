@@ -11,8 +11,7 @@ export const environment = {
     authDomain: 'portfolio-firebase-auth-52f17.firebaseapp.com',
     messagingSenderId: '341034263225',
   },
-  production: false,
-  apiBaseUrl: 'http://localhost:8080'
+  production: false
 };
 
 /*

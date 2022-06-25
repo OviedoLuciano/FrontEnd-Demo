@@ -8,7 +8,7 @@ import { Experiencia } from '../model/experiencia.model';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private apiServerUrl=environment.apiBaseUrl;
+  private apiServerUrl="https://ap-luciano.herokuapp.com";
  
  constructor(private http: HttpClient) { }
  public getExperiencia(): Observable<Experiencia[]>{

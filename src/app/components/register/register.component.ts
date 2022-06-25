@@ -29,7 +29,7 @@ onSubmit(){
     console.log(response);
     this.router.navigate(['/login']);
   })
-  .catch(error=>alert("La contraseña debe de 6 caracteres o más"));
+  .catch(error=>alert("La contraseña debe de 6 caracteres o más, ¡o quizás ya estés registrado!"));
 }
 
 }

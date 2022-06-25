@@ -9,7 +9,7 @@ import { Proyecto } from '../model/proyecto.model';
 })
 export class ProyectoService {
 
-  private apiServerUrl=environment.apiBaseUrl;
+  private apiServerUrl="https://ap-luciano.herokuapp.com";
   constructor(private http: HttpClient) { }
 
   public getProyecto(): Observable<Proyecto[]>{
