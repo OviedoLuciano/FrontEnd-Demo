@@ -84,3 +84,21 @@ h1{
 .titulo{
    margin-top: 50px;
 }
+
+
+img{
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+img:hover{
+    transform:scale(1.05);
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    cursor: pointer;
+}

@@ -1,7 +1,14 @@
 <div class="row " *ngIf="usuario">
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
 
-    <img id="foto-perfil" src="{{usuario.img}}" alt="{{usuario.nombre}}" class="img-fluid">
+  <a  data-bs-toggle="modal" data-bs-target="#editFotoModal" 
+  (click)="onOpenModal('edit', usuario)"
+  class="tooltips edicion"
+  data-toggle="tooltip"
+  data-placement="top"
+  data-original-title="Editar">
+   <img id="foto-perfil" src="{{usuario.img}}" alt="{{usuario.nombre}}" class="img-fluid">
+</a>
 </div>
 
 
@@ -149,5 +156,69 @@ aria-hidden="true">
 
 
 
+
+
+
+<!----------EDITAR FOTO-->
+
+
+  
+<div class="modal fade" 
+id="editFotoModal" 
+tabindex="-1" role="dialog" 
+aria-labelledby="editFotoModalLabel" 
+aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editFotoModalLabel">Editar Imagen y Banner</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form #editForm="ngForm">
+     
+          <input type="hidden"
+          ngModel="{{editUsuario?.id}}"
+          name="id"
+          class="form-control"
+          id="id"
+          placeholder="">
+        
+         
+         
+        <div class="form-group">
+          <label for="img">Foto de Perfil</label>
+      <input type="text"
+      ngModel="{{editUsuario?.img}}"
+      name="img"
+      class="form-control"
+      id="img"
+      placeholder="Foto de Perfil"
+     > </div>
+     <div class="form-group">
+      <label for="banner">Banner</label>
+  <input type="text"
+  ngModel="{{editUsuario?.banner}}"
+  name="banner"
+  class="form-control"
+  id="banner"
+  placeholder="Foto de Portada"
+ ></div>
+     
+       <div class="modal-footer">
+        <button type="button" id="" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button (click)="onUpdateUsuario(editForm.value)"
+        data-bs-dismiss="modal"
+      class="btn btn-primary">Guardar Cambios</button>
+      </div>
+      
+      </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 
