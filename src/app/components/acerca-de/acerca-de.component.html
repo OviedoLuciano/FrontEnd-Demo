@@ -1,5 +1,5 @@
-<div class="row " *ngIf="usuario">
-<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+<div class="row contenedor" >
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngIf="usuario" >
 
   <a  data-bs-toggle="modal" data-bs-target="#editFotoModal" 
   (click)="onOpenModal('edit', usuario)"
@@ -27,7 +27,7 @@
 
 
 
-<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngIf="usuario">
     <p id="nombres">{{usuario.nombre}} {{usuario.apellido}}<a 
         data-bs-toggle="modal" data-bs-target="#editUsuarioModal" 
         (click)="onOpenModal('edit', usuario)"
@@ -42,7 +42,7 @@
     
     <p style="color:#fff">{{usuario.titulo}}</p>
 </div>
-<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngIf="usuario">
     <span><h1 style="color:#EE9B00;">Acerca de mí</h1>
     <p style="color:#fff">{{usuario.descripcion}} 
     </p></span>

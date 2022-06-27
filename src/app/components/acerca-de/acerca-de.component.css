@@ -102,3 +102,7 @@ img:hover{
     -o-transform:scale(1.05);
     cursor: pointer;
 }
+
+.contenedor{
+    height: 27vh;
+}

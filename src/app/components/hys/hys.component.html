@@ -1,10 +1,10 @@
-<div class="row" >
+<div class="row"  >
   
   <h1 class="titulo">Hard & Soft Skills <button type="button" class="btn btn-warning boton" (click)="onOpenModal('add')" data-bs-toggle="modal" data-bs-target="#addSkillsModal"> <a class="nav-link" style="color:#001219">
     Agregar Skills<span class="sr-only">(current)</span>
     </a></button></h1>
  
- <div  *ngFor="let skills of skilles" class="text-center circulos col-sm-4 col-md-4 col-lg-4 skills"> 
+ <div  *ngFor="let skills of skilles" class="wow animate__animated animate__bounceIn animate_delay-3s text-center circulos col-sm-4 col-md-4 col-lg-4 skills"> 
    
   <p class="card-text"><a
     data-bs-toggle="modal" data-bs-target="#editSkillsModal" 
@@ -26,7 +26,7 @@
     </a></p>
   
   
-  <circle-progress
+  <circle-progress 
   [percent]="skills.porcentaje"
   [radius]="80"
   [imageSrc]="skills.fotoSkill"

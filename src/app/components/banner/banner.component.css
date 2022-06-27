@@ -3,3 +3,9 @@ width: 100%;
 height: 600px;
 size: cover;
 }
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-color: #001219;
+}
