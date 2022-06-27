@@ -104,5 +104,11 @@ img:hover{
 }
 
 .contenedor{
-    height: 27vh;
+    height: 24vh;  
+}
+
+@media (max-width:575px){
+.contenedor{
+    height: 50vh;
+}
 }
