@@ -1,11 +1,19 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 .row {
     padding:20px; 
     background-color:#001219;
 text-align:center;
 }
 
+
+.descripcion{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulacion{
+    font-family: 'Montserrat', sans-serif;
+}
 
  @media (min-width:576px){ 
   #foto-perfil{
