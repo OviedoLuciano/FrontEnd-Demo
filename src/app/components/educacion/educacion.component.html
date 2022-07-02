@@ -1,7 +1,7 @@
 
 <div class="row contenedor">
   
-    <h1 class="titulo" style="font-family: 'Montserrat Alternates', sans-serif;">Educacion  <button type="button" class="btn btn-warning" (click)="onOpenModal('add')" data-bs-toggle="modal" data-bs-target="#addEducacionModal"> <a class="nav-link" style="color:#001219;">
+    <h1 class="titulo mr-5" style="font-family: 'Rubik', sans-serif;">Educacion  <button type="button" class="btn btn-warning" (click)="onOpenModal('add')" data-bs-toggle="modal" data-bs-target="#addEducacionModal"> <a class="nav-link" style="color:#001219;">
       Agregar educacion<span class="sr-only">(current)</span>
       </a></button></h1> 
 <div  class="col-lg-4" *ngFor="let educacion of educaciones">
@@ -16,8 +16,8 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{educacion.tituloEdu}}</h5><p>({{educacion.fechaEdu}})</p>
-          <p class="card-text">{{educacion.descEdu}}</p>
+          <h5 class="card-title" style="font-family: 'Rubik', sans-serif;" >{{educacion.tituloEdu}}</h5><p>({{educacion.fechaEdu}})</p>
+          <p class="card-text" style="font-family: 'Montserrat', sans-serif;">{{educacion.descEdu}}</p>
           <p class="card-text"><a
             data-bs-toggle="modal" data-bs-target="#editEducacionModal" 
             (click)="onOpenModal('edit', educacion)"
@@ -245,8 +245,8 @@
    <!----Alerta-->
    <div *ngIf="educaciones?.length==0" class="col-lg-12 col-md-12 col-xl-12">
      <div class="alert alert-warning" style="background-color:#0A9396; color:#001219; border:none"role="alert">
-       <h4 class="alert-heading">No hay educaciones!</h4>
-       <p>Educaciones no encontradas</p>
+       <h4 class="alert-heading" style="font-family: 'Montserrat Alternates', sans-serif;">No hay educaciones!</h4>
+       <p style="font-family: 'Montserrat', sans-serif;">Educaciones no encontradas</p>
      </div>
    </div>
    

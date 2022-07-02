@@ -1,7 +1,7 @@
 
 <div class="row">
   
-  <h1 class="titulo" style="font-family: 'Montserrat Alternates', sans-serif;">Experiencia  <button type="button" class="btn btn-warning"  (click)="onOpenModal('add')" data-bs-toggle="modal" data-bs-target="#addExperienciaModal"> <a class="nav-link" style="color:#001219">
+  <h1 class="titulo" style="font-family: 'Rubik', sans-serif;">Experiencia  <button type="button" class="btn btn-warning"  (click)="onOpenModal('add')" data-bs-toggle="modal" data-bs-target="#addExperienciaModal"> <a class="nav-link" style="color:#001219">
     Agregar experiencia <span class="sr-only">(current)</span>
     </a></button></h1> 
  
@@ -17,8 +17,8 @@
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">{{experiencia.tituloExp}}</h5><p>({{experiencia.fechaExp}})</p>
-              <p class="card-text">{{experiencia.descExp}}</p>
+              <h5 class="card-title"  style="font-family: 'Rubik', sans-serif;">{{experiencia.tituloExp}}</h5><p>({{experiencia.fechaExp}})</p>
+              <p class="card-text"  style="font-family: 'Montserrat', sans-serif;">{{experiencia.descExp}}</p>
               <p class="card-text"><a
                 data-bs-toggle="modal" data-bs-target="#editExperienciaModal" 
                 (click)="onOpenModal('edit', experiencia)"
@@ -268,7 +268,7 @@
     <!----Alerta-->
     <div *ngIf="experiencias?.length==0" class="col-lg-12 col-md-12 col-xl-12">
       <div class="alert alert-primary" style="background-color:#0A9396; color:#001219; border:none" role="alert">
-        <h4 class="alert-heading">No hay experiencia!</h4>
-        <p>Experiencias no encontradas</p>
+        <h4 class="alert-heading" style="font-family: 'Montserrat Alternates', sans-serif;">No hay experiencia!</h4>
+        <p style="font-family: 'Montserrat', sans-serif;">Experiencias no encontradas</p>
       </div>
     </div>

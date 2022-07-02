@@ -28,7 +28,7 @@
 
 
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" *ngIf="usuario">
-    <p id="nombres" style="font-family: 'Montserrat Alternates', sans-serif;">{{usuario.nombre}} {{usuario.apellido}}<a 
+    <p id="nombres" style="font-family: 'Rubik', sans-serif;">{{usuario.nombre}} {{usuario.apellido}}<a 
         data-bs-toggle="modal" data-bs-target="#editUsuarioModal" 
         (click)="onOpenModal('edit', usuario)"
         class="btn btn-warning tooltips edicion"
@@ -43,7 +43,7 @@
     <p class="titulacion" style="color:#fff">{{usuario.titulo}}</p>
 </div>
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngIf="usuario">
-    <span><h1 style="color:#EE9B00; font-family: 'Montserrat Alternates', sans-serif;">Acerca de mí</h1>
+    <span><h1 style="color:#EE9B00; font-family: 'Rubik', sans-serif;">Acerca de mí</h1>
     <p class="descripcion" style="color:#fff">{{usuario.descripcion}} 
     </p></span>
 </div>

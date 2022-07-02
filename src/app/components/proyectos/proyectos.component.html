@@ -7,10 +7,10 @@
     <div class="card" style="width: 18rem;" *ngFor="let proyecto of proyectos">
       <img src="{{proyecto.imagenP}}" class="card-img-top" alt="Github">
       <div class="card-body">
-        <h5 class="card-title">{{proyecto.tituloP}}  <a
+        <h5 class="card-title"  style="font-family: 'Rubik', sans-serif;">{{proyecto.tituloP}}  <a
           data-bs-toggle="modal" data-bs-target="#editProyectoModal" 
           (click)="onOpenModal('edit', proyecto)"
-          class="btn btn-warning tooltips edicion"
+          class="btn btn-info tooltips edicion"
           data-toggle="tooltip"
           data-placement="top"
           data-original-title="Editar">
@@ -27,7 +27,7 @@
           </a></h5>
 
 
-        <p class="card-text">{{proyecto.descP}}</p>
+        <p class="card-text" style="font-family: 'Montserrat', sans-serif;">{{proyecto.descP}}</p>
         <a href="{{proyecto.linkP}}" target="_blank"><button class="btn btn-primary">Link</button>
          </a>
       </div>
