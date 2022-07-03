@@ -1,26 +1,26 @@
 
 
 .row{
-    background-color: #001219;
+    background-color: #000608;
 }
 .footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #001219;
+    background-color: #000608;
     color: #fff;
    padding: 20px;
   
 }
 
-.footer-content h2{
-    font-size: 3em;
+.footer-content h4{
+   
     margin-top: .3em;
 
 }
 .footer-content h5{
-    font-size:1.5em;
+  
   justify-content:center;
 }
 i{
